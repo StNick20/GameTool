@@ -1,7 +1,7 @@
 # CMake Lists 
 
 # This names our executable (and for VS our project). 
-set(APP ui) 
+set(APP UserInterface) 
 
  
 
