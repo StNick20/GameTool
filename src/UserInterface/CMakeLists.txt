@@ -18,8 +18,8 @@ add_dependencies(${APP} FileHandling) # my target(s)
 add_dependencies(${APP} Model)
 
 # Link our libraries
-target_link_libraries (${APP} LINK_PUBLIC model)
-target_link_libraries (${APP} LINK_PUBLIC loader)
+target_link_libraries (${APP} LINK_PUBLIC Model)
+target_link_libraries (${APP} LINK_PUBLIC FileHandling)
 
 
 install(TARGETS ${APP}
