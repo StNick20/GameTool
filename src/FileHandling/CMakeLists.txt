@@ -12,7 +12,9 @@ add_library(${LIB} ${LIB_FILES})
 # Link the current directory - for the local .h files. 
 target_include_directories (${LIB} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
+
 # Link other libraries
+target_link_libraries (${LIB} LINK_PUBLIC Model)
 
 install(TARGETS ${LIB}
 	CONFIGURATIONS Release RelWithDebInfo Debug
