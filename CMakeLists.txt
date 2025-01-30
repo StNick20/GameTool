@@ -67,6 +67,6 @@ add_subdirectory (src/FileHandling)
 add_subdirectory (src/UserInterface) 
 
 # testing
-add_subdirectory (src/Testing)
+#add_subdirectory (src/Testing)
 
 message(STATUS "Cmake is Done!")

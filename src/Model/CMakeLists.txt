@@ -1,7 +1,7 @@
 # CMake Lists 
 
 # This names our library (and for VS our project). 
-set(LIB model) 
+set(LIB Model) 
 
 # Collect files matching this pattern
 # into a list.
