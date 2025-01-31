@@ -1,6 +1,6 @@
-include "b.h"
+#include "b.hpp"
 
-b::b()
+b::b(const std::string& name) : name(name)
 {
 
 }
@@ -8,4 +8,14 @@ b::b()
 b::~b()
 {
 
+}
+
+std::string b::getName() const
+{
+	return name;
+}
+
+void b::setName(const std::string& name)
+{
+	this->name = name;
 }

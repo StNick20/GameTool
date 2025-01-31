@@ -7,11 +7,11 @@ set(APP UserInterface)
 
 file(GLOB EXE_FILES *.cpp)
 
-IF (WIN32)
-	add_executable(${APP} WIN32 ${EXE_FILES})
-ELSE()
+#IF (WIN32)
+#	add_executable(${APP} WIN32 ${EXE_FILES})
+#ELSE()
 	add_executable(${APP} ${EXE_FILES})
-ENDIF()
+#ENDIF()
 
 # Make sure dependent projects are compiled first!
 add_dependencies(${APP} FileHandling) # my target(s)
